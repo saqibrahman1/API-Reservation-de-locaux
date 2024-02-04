@@ -1,0 +1,2461 @@
+{
+	"info": {
+		"_postman_id": "d7ee141d-dd23-4918-a01c-cc8c1b020f2c",
+		"name": "Reservation de locaux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30535934"
+	},
+	"item": [
+		{
+			"name": "Jean Dupont",
+			"item": [
+				{
+					"name": "voir reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Voir reservation par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES103\",\r\n         \"HArrive\": \"17:00:00\",\r\n         \"Hdepart\": \"19:00:00\",\r\n         \"IdSalle\": \"5\",\r\n         \"NbrPersonnes\": \"3\"\r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES103\",\n         \"HArrive\": \"17:00:00\",\n         \"Hdepart\": \"19:00:00\",\n         \"IdSalle\": \"5\",\n         \"NbrPersonnes\": \"5\"\n         \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n         \"nombrePersonnes\": 5,\r\n         \"nomSalle\": \"B303\",\r\n         \"Equipement\": \"Windows\",\r\n         \"heureOuverture\":\"8:00\" ,\r\n         \"heureFermeture\": \"16:00\",\r\n         \"imageSalle\": \"salle 2\",\r\n         \"idSalle\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n         \"nombrePersonnes\": 4,\r\n         \"nomSalle\": \"B205\",\r\n         \"Equipement\": \"Windows\",\r\n         \"heureOuverture\":\"8:00\" ,\r\n         \"heureFermeture\": \"10:00\",\r\n         \"imageSalle\": \"salle 2\",\r\n         \"idSalle\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Diego lopez",
+			"item": [
+				{
+					"name": "voir reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "password",
+									"value": "Diego123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "diegolopez123@gmail.com",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Voir reservation par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES203\",\r\n         \"HArrive\": \"17:00:00\",\r\n         \"Hdepart\": \"19:00:00\",\r\n         \"IdSalle\": \"5\",\r\n         \"NbrPersonnes\": \"4\"\r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES203\",\r\n         \"HArrive\": \"17:00:00\",\r\n         \"Hdepart\": \"19:00:00\",\r\n         \"IdSalle\": \"5\",\r\n         \"NbrPersonnes\": \"7\"\r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES203",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES203"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES203",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES203"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n         \"nombrePersonnes\": 5,\r\n         \"nomSalle\": \"B303\",\r\n         \"Equipement\": \"Windows\",\r\n         \"heureOuverture\":\"8:00\" ,\r\n         \"heureFermeture\": \"16:00\",\r\n         \"imageSalle\": \"salle 2\",\r\n         \"idSalle\": 7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n         \"nombrePersonnes\": 4,\r\n         \"nomSalle\": \"B205\",\r\n         \"Equipement\": \"Windows\",\r\n         \"heureOuverture\":\"8:00\" ,\r\n         \"heureFermeture\": \"10:00\",\r\n         \"imageSalle\": \"salle 2\",\r\n         \"idSalle\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Marie Durant",
+			"item": [
+				{
+					"name": "voir reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Voir reservation par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "password",
+									"value": "Password123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "jean.dupont@example.com",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "jean dupont",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES201",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES304\",\r\n         \"HArrive\": \"17:00:00\",\r\n         \"Hdepart\": \"19:00:00\",\r\n         \"IdSalle\": \"5\",\r\n         \"NbrPersonnes\": \"4\",\r\n         \"IdUtilisateur\":\"auth0|656d0dba34408e731c39de12\"\r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {       \"CodeReserv\": \"RES304\",\r\n         \"HArrive\": \"17:00:00\",\r\n         \"Hdepart\": \"19:00:00\",\r\n         \"IdSalle\": \"5\",\r\n         \"NbrPersonnes\": \"9\",\r\n         \"IdUtilisateur\":\"auth0|656d0dba34408e731c39de12\"\r\n        \r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES304",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES304"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer reservation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Reservations/RES304",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Reservations",
+								"RES304"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "voir salles par code",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ajouter une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{       \"idSalle\": 7,\r\n         \"nombrePersonnes\": 5,\r\n         \"heureOuverture\":\"8:00\" ,        \r\n         \"heureFermeture\": \"16:00\",\r\n         \"nomSalle\": \"B303\",\r\n         \"imageSalle\": \"salle 2\",\r\n          \"equipement\": \"Windows\"\r\n         \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "modifier salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n         \"nombrePersonnes\": 9,\r\n         \"nomSalle\": \"B205\",\r\n         \"equipement\": \"Windows\",\r\n         \"heureOuverture\":\"8:00\" ,\r\n         \"heureFermeture\": \"10:00\",\r\n         \"imageSalle\": \"salle 2\",\r\n         \"idSalle\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "supprimer une salle",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "username",
+									"value": "marie.durand@example.com",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "Password456",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "marie durant",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "CLfagsQ6u7a9jNZcxCkGXY5CtA6dWzng",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "pqKfoz-l6JyRgsrkpbeSfBY27xB_71TxPs2tCFK9DVaHwI2e17KcuLZ_bAphADwq",
+									"type": "string"
+								},
+								{
+									"key": "tokenRequestParams",
+									"value": [
+										{
+											"key": "audience",
+											"value": "https://reservation",
+											"enabled": true,
+											"send_as": "request_body"
+										}
+									],
+									"type": "any"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://dev-iljfx0nqq2sh27ia.us.auth0.com/oauth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "password_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/Salles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Salles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

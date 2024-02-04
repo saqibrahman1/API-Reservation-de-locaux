@@ -1,0 +1,8 @@
+auth0:
+  audience: https://reservation
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-iljfx0nqq2sh27ia.us.auth0.com/

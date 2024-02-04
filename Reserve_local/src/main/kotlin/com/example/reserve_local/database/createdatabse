@@ -1,0 +1,64 @@
+Create Database reservationlocal;
+USE reservationlocal;
+
+CREATE TABLE Role (
+    idRole INT NOT NULL AUTO_INCREMENT,
+    RoleUtilisateur ENUM('Etudiant', 'Admin') NOT NULL,
+    PRIMARY KEY (idRole)
+);
+
+CREATE TABLE Utilisateur (
+    IdUtilisateur VARCHAR(255) NOT NULL,
+    NumDA INT,
+    MotDePasse VARCHAR(255),
+    NomUtilisateur VARCHAR(255),
+    PrenomUtilisateur VARCHAR(255),
+    Courriel VARCHAR(255),
+    idRole INT,
+    PRIMARY KEY (IdUtilisateur),
+    FOREIGN KEY (idRole) REFERENCES Role(idRole)
+);
+
+CREATE TABLE `Salle` (
+  `IdSalle` int NOT NULL AUTO_INCREMENT,
+  `nombrePersonnes` int DEFAULT NULL,
+    `Equipement` enum('Windows','Linux') DEFAULT NULL,
+  `heureOuverture` varchar(255) DEFAULT NULL,
+  `heureFermeture` varchar(255) DEFAULT NULL,
+  `nomSalle` varchar(255) DEFAULT NULL,
+  `imageSalle` varchar(255) DEFAULT NULL,
+
+  PRIMARY KEY (`IdSalle`)
+) ;
+
+
+CREATE TABLE Reservation (
+    CodeReserv VARCHAR(255) NOT NULL,
+    HArrive TIME,
+    Hdepart TIME,
+    IdSalle INT,
+    NbrPersonnes INT,
+    IdUtilisateur  VARCHAR(255) NOT NULL,
+    PRIMARY KEY (CodeReserv),
+    FOREIGN KEY (IdSalle) REFERENCES Salle(IdSalle),
+    FOREIGN KEY (IdUtilisateur) REFERENCES Utilisateur(IdUtilisateur)
+);
+
+
+INSERT INTO Salle (IdSalle,nombrePersonnes,heureOuverture,heureFermeture,nomSalle,imageSalle,Equipement) Values('5',4,'8:00','10:00','B205','salle2','Windows');
+INSERT INTO Salle (IdSalle,nombrePersonnes,heureOuverture,heureFermeture,nomSalle,imageSalle,Equipement) Values('6',4,'8:00','10:00','B305','salle2','Windows');
+
+
+
+INSERT INTO Role (RoleUtilisateur) VALUES ('Etudiant');
+INSERT INTO Role (RoleUtilisateur) VALUES ('Admin');
+
+INSERT INTO Utilisateur (IdUtilisateur, NumDA, MotDePasse, NomUtilisateur, PrenomUtilisateur, Courriel, idRole) VALUES ('auth0|656d0dba34408e731c39de12', 12345, 'password123', 'Dupont', 'Jean', 'jean.dupont@example.com', 1);
+INSERT INTO Utilisateur (IdUtilisateur,NumDA, MotDePasse, NomUtilisateur, PrenomUtilisateur, Courriel, idRole) VALUES ('178saas90',34433, 'password456', 'Durand', 'Marie', 'marie.durand@example.com', 2);
+INSERT INTO Utilisateur (IdUtilisateur,NumDA, MotDePasse, NomUtilisateur, PrenomUtilisateur, Courriel, idRole) VALUES ('auth0|6584ea85ccba5f154aee0cfb',6272, 'Diego123$', 'Lopez', 'Diego', 'diegolopez123@gmail.com', 1);
+
+
+INSERT INTO Reservation (CodeReserv, HArrive, Hdepart, IdSalle, NbrPersonnes, IdUtilisateur) VALUES ('RES100', '14:00:00', '15:00:00', 6, 3, 'auth0|656d0dba34408e731c39de12');
+INSERT INTO Reservation (CodeReserv, HArrive, Hdepart, IdSalle, NbrPersonnes, IdUtilisateur) VALUES ('RES101', '10:00:00', '11:00:00', 5, 2, 'auth0|656d0dba34408e731c39de12');
+INSERT INTO Reservation (CodeReserv, HArrive, Hdepart, IdSalle, NbrPersonnes, IdUtilisateur) VALUES ('RES200', '16:00:00', '17:00:00', 6, 2, 'auth0|6584ea85ccba5f154aee0cfb');
+INSERT INTO Reservation (CodeReserv, HArrive, Hdepart, IdSalle, NbrPersonnes, IdUtilisateur) VALUES ('RES201', '19:00:00', '20:00:00', 5, 4, 'auth0|6584ea85ccba5f154aee0cfb');
